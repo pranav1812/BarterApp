@@ -15,7 +15,7 @@
 
      <!-- CSS-->
      <link rel="stylesheet" href="landingCSS.css">
-             
+
 </head>
 <body >
     <nav>
@@ -36,43 +36,62 @@
             <li class="loggedIn"><a href="sass.html"><i class="material-icons">add</i></a></li>
             <li class="loggedIn"><a href="badges.html"><i class="material-icons">visibility</i></a></li>
             <li class="loggedIn"><a href="collapsible.html"><i class="material-icons">shopping_cart</i></a></li>
-            <li class="loggedIn"><a href="mobile.html"><i class="material-icons">account_circle</i></a></li>
-            <li class="loggedOut">
+            <!-- cjkjn -->
+            <li class="loggedIn accBtn"><a href="#accountModal" class='modal-trigger'><i class="material-icons">account_circle</i></a></li>
 
-              <div class="AccountBtns">
+<!-- profile modal -->
+
+
+            <!-- kfdjkf -->
+            <li class="loggedOut AccountBtns"><a href="#login" class="btn btn-small teal modal-trigger">Login</a></li>
+            <li class="loggedOut AccountBtns"> <a href="#signUp" class="btn btn-small teal modal-trigger">Sign Up</a></li>
+
                 <!-- <div class="container "> -->
-                  <a href="#login" class="btn btn-small teal modal-trigger">Login</a>
-                  <a href="#signUp" class="btn btn-small teal modal-trigger">Sign Up</a>
+                  <div class="profileModal">
+                    <div id="accountModal" class="modal accountModal">
+                      <h5 style="padding-left: 10px;"class="modal-close">&#10005;</h5>
+                      <div class="modal-content center">
+                        <i class="large  material-icons ">account_circle</i>
+
+                        <div class="user-profile">
+
+                      </div>
+
+                      <a href="#" class="signOut-btn btn btn-large teal modal-close" id="logout" >Logout</a>
+                    </div>
+                   </div>
+                  </div>
+
                 <!-- </div> -->
-                  
+
                 <div id="login" class="modal loginModal">
-                  
+
                     <h5 style="padding-left: 10px;"class="modal-close">&#10005;</h5>
                   <div class="modal-content center">
                     <h4>Login Form</h4>
-                    
-                
-                    <form action="#">
-                
-                      <div class="input-field">
+
+
+                    <form id="loginForm" action="#">
+
+                      <div class="input-field white">
                         <i class="material-icons prefix">person</i>
                         <input type="text" id="email">
                         <label for="email">Email</label>
                       </div>
-                      
-                
+
+
                       <div class="input-field">
                         <i class="material-icons prefix">lock</i>
                         <input type="password" id="pass">
                         <label for="pass">Password</label>
                       </div>
-            
+
                       <input type="submit" value="Login" class="btn btn-large modal-close">
                       <br>
-                      
+
                       <div class="extra">
-                          
-            
+
+
                         <span class="helper-text" ><a href="#">Forgot Password?</a></span>
                         <br>
                         <span class="helper-text" >New here? <a href="#">sign up</a></span>
@@ -80,40 +99,40 @@
                     </form>
                   </div>
                 </div>
-            
+
             <div id="signUp" class="modal signUpModal">
                     <h5  style="padding-left: 10px;" class="modal-close">&#10005;</h5>
-                    
+
                     <div class="modal-content center">
                         <a href="#user" class="btn btn-large teal modal-trigger modal-close">User</a>
                         <a href="#expert" class="btn btn-large teal modal-trigger modal-close">Expert</a>
                   <br>
-                  <br>  
+                  <br>
                     </div>
                   </div>
-            
-                  <div id="user" class="modal userSignUp">
+
+                  <div id="user" class="modal white userSignUp">
                     <h5 style="padding-left: 10px;" class="modal-close">&#10005;</h5>
                     <div class="modal-content center">
                       <h4>New User Sign Up</h4>
                       <br>
-                  
-                      <form action="#">
-                  
+
+                      <form id="signupModal" action="#">
+
                           <div class="input-field">
-                           
+
                             <input type="text" id="uName">
                             <label for="uName">Name</label>
                           </div>
                           <br>
                           <div class="input-field">
-                          
+
                             <input type="text" id="uEmail">
                             <label for="uEmail">Email</label>
                           </div>
                           <br>
                           <div class="input-field">
-                          
+
                             <input type="text" id="uPhNum">
                             <label for="uPhNum">Phone Number</label>
                           </div>
@@ -128,11 +147,11 @@
                             <label for="uPass-confirm">Confirm Password</label>
                           </div>
                           <br>
-                          
-                        
-                 
+
+
+
                         <input type="submit" value="Sign Up" class="btn btn-large modal-close">
-                        
+
                       </form>
                     </div>
                   </div>
@@ -142,35 +161,35 @@
                 <div class="modal-content center">
                   <h4>New Expert Sign Up</h4>
                   <br>
-              
+
                   <form action="#">
-              
+
                       <div class="input-field">
-                       
+
                         <input type="text" id="eName">
                         <label for="eName">Name</label>
                       </div>
                       <br>
                       <div class="input-field">
-                      
+
                         <input type="text" id="eEmail">
                         <label for="eEmail">Email</label>
                       </div>
                       <br>
                       <div class="input-field">
-                      
+
                         <input type="text" id="ePhNum">
                         <label for="ePhNum">Phone Number</label>
                       </div>
                       <br>
                       <div class="input-field">
-                      
+
                         <input type="text" id="eRegShopName">
                         <label for="eRegShopName">Registered Shop Name</label>
                       </div>
                       <br>
                       <div class="input-field">
-                      
+
                         <input type="text" id="eGST">
                         <label for="eGST">GST Number</label>
                       </div>
@@ -191,21 +210,21 @@
                         <label for="ePass-confirm">Confirm Password</label>
                       </div>
                       <br>
-                      
-                    
-             
+
+
+
                     <input type="submit" value="Sign Up" class="btn btn-large modal-close">
-                    
+
                   </form>
                 </div>
               </div>
-            </div>   
-            
+            </div>
+
 
             </li>
-          
+
           </ul>
-         
+
         </div>
       </nav>
       <a href="Vehicles.html">
@@ -220,7 +239,7 @@
       </div>
     </a>
 
-    <a href="Furniture.html"> 
+    <a href="Furniture.html">
     <div class="categoryBoxes">
         <div class="col s12 m6">
           <div class="card blue-grey darken-1 catHeading">
@@ -317,6 +336,41 @@
         </div>
       </div>
       </a>
-<script src="landingJs.js"></script>
-</body> 
+
+</body>
 </html>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB672Bi0dr3jWfQdruleaeyBQh_ojPqeeE",
+    authDomain: "barterapp-23b59.firebaseapp.com",
+    databaseURL: "https://barterapp-23b59.firebaseio.com",
+    projectId: "barterapp-23b59",
+    storageBucket: "barterapp-23b59.appspot.com",
+    messagingSenderId: "172181645672",
+    appId: "1:172181645672:web:1b1f86a450726294924edd",
+    measurementId: "G-VMQS60G0VR"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+
+<script src="landingJs.js"></script>
+<script src="auth.js"></script>
+
+
+

@@ -12,7 +12,11 @@ app.use(express.static(path.join(__dirname,'public')));
 var Port=3000;
 
 app.get('/',(req,res)=>{
-    res.send('connected again')
+    res.sendFile('/root/Desktop/web_dev/barter_system/public/scripts/landing_page.html')
+})
+
+app.get('/evaluateProduct',(req,res)=>{
+    
 })
 
 app.listen(Port,console.log(`listening on port ${Port}`));
