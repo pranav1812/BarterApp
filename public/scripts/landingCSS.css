@@ -1,0 +1,60 @@
+body{
+    background-image: url(img/background.jpg);
+}
+
+.search_bar{
+    width: 40%;
+    background-color:black;
+}
+.categoryBoxes{
+    width: 30%;
+    float: left;
+    margin: 1vw;
+    height: 30vw;
+    background-color: white;
+    border-radius: 7px ;
+    opacity: 0.7;
+    
+}
+.categoryBox1{
+    margin-left: 3vw;
+}
+.catHeading{
+    margin: auto;
+    width: 97%;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    border-radius: 7px;
+    height: 3vw;
+    opacity: 1 !important;
+}
+.catSub{
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    height: 3vw;
+}
+.card-title{
+    text-align: center;
+}
+.tt{
+    top: 5px;
+}
+.card-content{
+    padding: 5px !important ;
+}
+.nav-wrapper{
+    background-color: grey;
+    width: 98%;
+    margin: auto;
+    border-radius: 7px;
+}
+.nav{
+    background-color: grey;
+    width: 98%;
+    margin: auto;
+    border-radius: 7px;
+}
+.modal{
+    background-color: black;
+}
