@@ -14,7 +14,7 @@ body{
     background-color: white;
     border-radius: 7px ;
     opacity: 0.7;
-    
+
 }
 .categoryBox1{
     margin-left: 3vw;
@@ -50,20 +50,33 @@ body{
     border-radius: 7px;
     margin-top: 2vh  !important;
     margin-bottom: 2vh  !important;
-    
+
 }
 nav{
     background-color: grey;
     width: 98%;
     margin: auto;
     border-radius: 7px;
-    
+
 }
 .modal{
+
+    background-color: white;
+    color: black;
+
     background-color: black;
 }
 .logo{
     height: 60px;
     /* width: 200px; */
-   
+
+
+}
+.view-fields{
+    padding: 5%;
+}
+.box{
+    padding-top: 2%;
+
+
 }
