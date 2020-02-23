@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="addCss.css">
     <link  rel="stylesheet" href="landingCSS.css">
-            
+
 </head>
 <body>
   <nav>
@@ -154,69 +154,18 @@
                   </form>
                 </div>
               </div>
-        <!-- ll -->
-        <div id="expert" class="modal expertSignUp">
-            <h5 style="padding-left: 10px;" class="modal-close">&#10005;</h5>
-            <div class="modal-content center">
-              <h4>New Expert Sign Up</h4>
-              <br>
 
-              <form action="#">
-
-                  <div class="input-field">
-
-                    <input type="text" id="eName">
-                    <label for="eName">Name</label>
-                  </div>
-                  <br>
-                  <div class="input-field">
-
-                    <input type="text" id="eEmail">
-                    <label for="eEmail">Email</label>
-                  </div>
-                  <br>
-                  <div class="input-field">
-
-                    <input type="text" id="ePhNum">
-                    <label for="ePhNum">Phone Number</label>
-                  </div>
-                  <br>
-                  <div class="input-field">
-
-                    <input type="text" id="eRegShopName">
-                    <label for="eRegShopName">Registered Shop Name</label>
-                  </div>
-                  <br>
-                  <div class="input-field">
-
-                    <input type="text" id="eGST">
-                    <label for="eGST">GST Number</label>
-                  </div>
-                  <br>
-                  <!-- <div class="input-field">
-                  shopAddress
-                    <input type="text" id="eGST">
-                    <label for="eShopAddree">GST Number</label>
-                  </div>
-                  <br> -->
-                  <div class="input-field">
-                    <input type="password" id="ePass">
-                    <label for="ePass">Password</label>
-                  </div>
-                  <br>
-                  <div class="input-field">
-                    <input type="password" id="ePass-confirm">
-                    <label for="ePass-confirm">Confirm Password</label>
-                  </div>
-                  <br>
+            </form>
+          </div>-->
+        <!--icons-->
+          <ul class="right hide-on-med-and-down" id="navbarIcons">
+            <li class="loggedIn"><a href="add.html"><i class="material-icons">add</i></a></li>
+            <li class="loggedIn"><a href="view.html"><i class="material-icons">visibility</i></a></li>
+            <li class="loggedIn"><a href="collapsible.html"><i class="material-icons">shopping_cart</i></a></li>
+            <li class="loggedIn"><a href="mobile.html"><i class="material-icons">account_circle</i></a></li>
+          </ul>
 
 
-
-                <input type="submit" value="Sign Up" class="btn btn-large modal-close">
-
-              </form>
-            </div>
-          </div>
         </div>
 
 
@@ -229,47 +178,47 @@
   <div class="zz">   
   <div style="margin:auto; width:90%;"class="container container-center">
       <div class=" row'center">
-        <form class="col s6">
+        <form id="insert" class="col s6">
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">dehaze</i>
-              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <input type="text" id="icon_prefix2" class="materialize-textarea cat">
               <label for="icon_prefix2">Category</label>
             </div>
 
-            
+
             <div class="input-field col s12">
               <i class="material-icons prefix">equalizer</i>
-              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <input type="text" id="icon_prefix2" class="materialize-textarea">
               <label for="icon_prefix2">Model No.</label>
             </div>
 
             <div class="input-field col s12">
               <i class="material-icons prefix">attach_money</i>
-              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <input type="text" id="icon_prefix2" class="materialize-textarea bp">
               <label for="icon_prefix2">M.R.P.</label>
             </div>
-      
+
 
             <div class="input-field col s12">
               <i class="material-icons prefix">events</i>
-              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <input type="text" id="icon_prefix2" class="materialize-textarea age">
               <label for="icon_prefix2">Years Old</label>
             </div>
 
 
             <div class="input-field col s12">
               <i class="material-icons prefix">mode_edit</i>
-              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <input type="text" id="icon_prefix2" class="materialize-textarea des">
               <label for="icon_prefix2">Brief Description</label>
             </div>
 
-            
-        
-        
+
+
+
 
           <div class="input-field col s12 center">
-            
+
             <!-- <i class="material-icons prefix">mode_edit</i>
             <div style="margin-left: 10px ; opacity:0;" class="btn"> -->
             <input type="file" multiple>
@@ -277,17 +226,52 @@
 
           </div>
           <div style="margin: auto;">
-          <div class="center"> 
-          <input type="submit" value="Submit" class="btn tt" >
+          <div class="center">
+          <input id="subbtn" type="submit" value="Submit" class="btn tt" >
           </div>
           </div>
-          
+
           </form>
-      
+
           </div>
-        
+
 
       </div>
     </div>
 </body>
 </html>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB672Bi0dr3jWfQdruleaeyBQh_ojPqeeE",
+    authDomain: "barterapp-23b59.firebaseapp.com",
+    databaseURL: "https://barterapp-23b59.firebaseio.com",
+    projectId: "barterapp-23b59",
+    storageBucket: "barterapp-23b59.appspot.com",
+    messagingSenderId: "172181645672",
+    appId: "1:172181645672:web:1b1f86a450726294924edd",
+    measurementId: "G-VMQS60G0VR"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  //const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+
+
+
+<script src="add.js"></script>
+
