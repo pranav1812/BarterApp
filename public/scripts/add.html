@@ -16,30 +16,218 @@
             
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="landing_page" class="brand-logo"><img src="img/logotemp.png" class="logo"></a>
-          <!--search bar-->
-          <!--<div class="nav-wrapper search_bar">
-            <form>
-              <div class="input-field">
-                <input placeholder="Search" id="search" type="search" required>
-                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                <i class="material-icons">close</i>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><img src="img/logotemp.png" class="logo"></a>
+      <!--search bar-->
+      <!--<div class="nav-wrapper search_bar">
+        <form>
+          <div class="input-field">
+            <input placeholder="Search" id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>-->
+    <!--icons-->
+      <ul class="right hide-on-med-and-down" id="navbarIcons">
+        <li class="loggedIn"><input class="search" type="text" placeholder="Search.."></li>
+        <!-- <li class="loggedIn"><a href="add.html"><i class="material-icons">add</i></a></li> -->
+        <li class="loggedIn"><a href="view.html"><i class="material-icons">visibility</i></a></li>
+        <li class="loggedIn"><a href="collapsible.html"><i class="material-icons">shopping_cart</i></a></li>
+        <!-- cjkjn -->
+        <li class="loggedIn accBtn"><a href="#accountModal" class='modal-trigger'><i class="material-icons">account_circle</i></a></li>
+
+<!-- profile modal -->
+
+
+        <!-- kfdjkf -->
+        <!-- <li class="loggedOut AccountBtns"><a href="#login" class="btn btn-small teal modal-trigger">Login</a></li> -->
+        <!-- <li class="loggedOut AccountBtns"> <a href="#signUp" class="btn btn-small teal modal-trigger">Sign Up</a></li> -->
+
+            <!-- <div class="container "> -->
+              <div class="profileModal">
+                <div id="accountModal" class="modal accountModal">
+                  <h5 style="padding-left: 10px;"class="modal-close">&#10005;</h5>
+                  <div class="modal-content center">
+                    <i class="large  material-icons ">account_circle</i>
+
+                    <div class="user-profile">
+
+                  </div>
+
+                  <a href="#" class="signOut-btn btn btn-large teal modal-close" id="logout" >Logout</a>
+                </div>
+               </div>
               </div>
-            </form>
-          </div>-->
-        <!--icons-->
-          <ul class="right hide-on-med-and-down" id="navbarIcons">
-            <li class="loggedIn"><a href="add.html"><i class="material-icons">add</i></a></li>
-            <li class="loggedIn"><a href="view.html"><i class="material-icons">visibility</i></a></li>
-            <li class="loggedIn"><a href="collapsible.html"><i class="material-icons">shopping_cart</i></a></li>
-            <li class="loggedIn"><a href="mobile.html"><i class="material-icons">account_circle</i></a></li>
-          </ul>
-         
+
+            <!-- </div> -->
+
+            <div id="login" class="modal loginModal">
+
+                <h5 style="padding-left: 10px;"class="modal-close">&#10005;</h5>
+              <div class="modal-content center">
+                <h4>Login Form</h4>
+
+
+                <form id="loginForm" action="#">
+
+                  <div class="input-field white">
+                    <i class="material-icons prefix">person</i>
+                    <input type="text" id="email">
+                    <label for="email">Email</label>
+                  </div>
+
+
+                  <div class="input-field">
+                    <i class="material-icons prefix">lock</i>
+                    <input type="password" id="pass">
+                    <label for="pass">Password</label>
+                  </div>
+
+                  <input type="submit" value="Login" class="btn btn-large modal-close">
+                  <br>
+
+                  <div class="extra">
+
+
+                    <span class="helper-text" ><a href="#">Forgot Password?</a></span>
+                    <br>
+                    <span class="helper-text" >New here? <a href="#">sign up</a></span>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+        <div id="signUp" class="modal signUpModal">
+                <h5  style="padding-left: 10px;" class="modal-close">&#10005;</h5>
+
+                <div class="modal-content center">
+                    <a href="#user" class="btn btn-large teal modal-trigger modal-close">User</a>
+                    <a href="#expert" class="btn btn-large teal modal-trigger modal-close">Expert</a>
+              <br>
+              <br>
+                </div>
+              </div>
+
+              <div id="user" class="modal white userSignUp">
+                <h5 style="padding-left: 10px;" class="modal-close">&#10005;</h5>
+                <div class="modal-content center">
+                  <h4>New User Sign Up</h4>
+                  <br>
+
+                  <form id="signupModal" action="#">
+
+                      <div class="input-field">
+
+                        <input type="text" id="uName">
+                        <label for="uName">Name</label>
+                      </div>
+                      <br>
+                      <div class="input-field">
+
+                        <input type="text" id="uEmail">
+                        <label for="uEmail">Email</label>
+                      </div>
+                      <br>
+                      <div class="input-field">
+
+                        <input type="text" id="uPhNum">
+                        <label for="uPhNum">Phone Number</label>
+                      </div>
+                      <br>
+                      <div class="input-field">
+                        <input type="password" id="uPass">
+                        <label for="uPass">Password</label>
+                      </div>
+                      <br>
+                      <div class="input-field">
+                        <input type="password" id="uPass-confirm">
+                        <label for="uPass-confirm">Confirm Password</label>
+                      </div>
+                      <br>
+
+
+
+                    <input type="submit" value="Sign Up" class="btn btn-large modal-close">
+
+                  </form>
+                </div>
+              </div>
+        <!-- ll -->
+        <div id="expert" class="modal expertSignUp">
+            <h5 style="padding-left: 10px;" class="modal-close">&#10005;</h5>
+            <div class="modal-content center">
+              <h4>New Expert Sign Up</h4>
+              <br>
+
+              <form action="#">
+
+                  <div class="input-field">
+
+                    <input type="text" id="eName">
+                    <label for="eName">Name</label>
+                  </div>
+                  <br>
+                  <div class="input-field">
+
+                    <input type="text" id="eEmail">
+                    <label for="eEmail">Email</label>
+                  </div>
+                  <br>
+                  <div class="input-field">
+
+                    <input type="text" id="ePhNum">
+                    <label for="ePhNum">Phone Number</label>
+                  </div>
+                  <br>
+                  <div class="input-field">
+
+                    <input type="text" id="eRegShopName">
+                    <label for="eRegShopName">Registered Shop Name</label>
+                  </div>
+                  <br>
+                  <div class="input-field">
+
+                    <input type="text" id="eGST">
+                    <label for="eGST">GST Number</label>
+                  </div>
+                  <br>
+                  <!-- <div class="input-field">
+                  shopAddress
+                    <input type="text" id="eGST">
+                    <label for="eShopAddree">GST Number</label>
+                  </div>
+                  <br> -->
+                  <div class="input-field">
+                    <input type="password" id="ePass">
+                    <label for="ePass">Password</label>
+                  </div>
+                  <br>
+                  <div class="input-field">
+                    <input type="password" id="ePass-confirm">
+                    <label for="ePass-confirm">Confirm Password</label>
+                  </div>
+                  <br>
+
+
+
+                <input type="submit" value="Sign Up" class="btn btn-large modal-close">
+
+              </form>
+            </div>
+          </div>
         </div>
-      </nav>
-      <div style="margin:auto; width:90%;"class="container container-center">
+
+
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+  <div class="zz">   
+  <div style="margin:auto; width:90%;"class="container container-center">
       <div class=" row'center">
         <form class="col s6">
           <div class="row">
