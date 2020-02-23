@@ -19,3 +19,11 @@ document.querySelector('#subbtn').addEventListener('click',(e)=>{
         .finally(console.log('something\'s done'))
 
 })
+
+document.addEventListener('DOMContentLoaded', function(e) {
+    const elems = document.querySelectorAll('.modal');
+    M.Modal.init(elems);
+    console.log('a');
+});
+console.log(sessionStorage.getItem('modal'));
+document.querySelector('.profileModal').innerHTML = sessionStorage.getItem('modal'); 

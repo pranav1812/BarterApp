@@ -10,7 +10,8 @@ const setupUI=(user)=>{
     if(user){
         loggedInLinks.forEach(item => item.style.display = 'block');
         loggedOutLinks.forEach(item => item.style.display = 'none');
-        console.log(user)
+        console.log(user);
+        // sessionStorage.setItem("user",JSON.stringify(user));
     }
     else{
         loggedOutLinks.forEach(item => item.style.display = 'block');
@@ -43,7 +44,7 @@ document.querySelector('li.accBtn').addEventListener('click',function(e){
     `
 
     profileDiv.innerHTML = profile;
-
+    sessionStorage.setItem("modal", document.querySelector('.modal').parentElement.innerHTML);
 });
 document.querySelector('.signOut-btn').addEventListener('click',function(){
    document.querySelector('.user-profile').innerHTML = '';
@@ -51,4 +52,4 @@ document.querySelector('.signOut-btn').addEventListener('click',function(){
 });
 
 
-
+   
