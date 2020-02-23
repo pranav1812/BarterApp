@@ -16,6 +16,10 @@ body{
     opacity: 0.7;
 
 }
+.categoryBoxes:hover{
+    opacity: 1;
+
+}
 .categoryBox1{
     margin-left: 3vw;
 }
@@ -79,4 +83,11 @@ nav{
     padding-top: 2%;
 
 
+}
+.nav-wrapper a:hover{
+    alt: "ADD";
+}
+.product{
+    margin: 30px !important;
+    border-radius: 10px;
 }
